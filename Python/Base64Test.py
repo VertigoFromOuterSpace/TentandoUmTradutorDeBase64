@@ -20,7 +20,7 @@ if len(dados_base64_limpo) % 4 != 0:
 # Tentar decodificar a bomba.
 try:
     dados_brutos = base64.b64decode(dados_base64_limpo, validate=True)
-    print(f"✅ Base64 válido! Tamanho decodificado: {len(dados_brutos)} bytes")
+    print(f"Base64 válido! Tamanho decodificado: {len(dados_brutos)} bytes")
     
     # Salva no arquivo do output.bin, não fiz tratamento de diretório algum, então ele sempre vai pra pasta root.
     with open("output.bin", "wb") as f:
