@@ -7,8 +7,8 @@ import binascii
 dados_base64 = """
 
 """
-# Só verificar os caracteres e matar eles se necessário.
 
+# Só verificar os caracteres e matar eles se necessário.
 dados_base64_limpo = re.sub(r'^[^A-Za-z0-9+/=]*', '', dados_base64)
 dados_base64_limpo = re.sub(r'[^A-Za-z0-9+/=]', '', dados_base64_limpo)
 
