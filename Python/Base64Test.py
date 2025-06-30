@@ -48,11 +48,11 @@ try:
 
 # Avisar se deu merda, que é sempre importante.
 except binascii.Error as e:
-    print(f"❌ Erro na decodificação Base64: {e}")
+    print(f"Erro na decodificação Base64: {e}")
     print("Prováveis problemas:")
     print("- Caracteres inválidos remanescentes")
     print("- Formatação incorreta")
     print(f"String usada (início): {dados_base64_limpo[:100]}...")
     print(f"Tamanho: {len(dados_base64_limpo)} caracteres")
 except Exception as e:
-    print(f"❌ Erro inesperado: {e}")
+    print(f"Erro inesperado: {e}")
